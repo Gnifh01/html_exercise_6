@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Lezione HTML</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 60px;
+      }
+
+      input,
+      label {
+        margin-top: 20px;
+      }
+      .separe {
+        display: flex;
+        flex-direction: column;
+        margin-top: 14px;
+      }
+
+      .separe span {
+        width: 6px;
+        height: 6px;
+        margin: 5px;
+        border-radius: 50%;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="button">Disabled Button</label>
+    <input type="button" name="button" value="Button" disabled />
+    <div class="separe">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <label for="number">Number Input</label>
+    <input
+      type="number"
+      name="number-input"
+      id="number"
+      minlength="0"
+      maxlength="100"
+      step="2"
+    />
+    <div class="separe">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <label for="checkbox">Checkbox</label>
+    <input type="checkbox" name="checkbox-input" id="checkbox" checked />
+    <div class="separe">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <label for="date">Calendar</label>
+    <input
+      type="date"
+      name="date-input"
+      id="date"
+      value="2022-05-25"
+      min="2020-01-01"
+      max="2025-12-31"
+    />
+  </body>
+</html>
